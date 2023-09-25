@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-slate-950">
+    <header
+      class="lg:flex justify-between items-center h-11 bg-slate-950 border-b border-gray-800 hidden"
+    >
+      <nav>
+        <ul class="flex text-[#ffffff85] md:space-x-7 space-x-3 md:pl-14">
+          <li
+            class="text-lg hover:text-white border-b border-slate-950 hover:border-b hover:border-white cursor-pointer"
+          >
+            Company
+          </li>
+          <li
+            class="text-lg hover:text-white border-b border-slate-950 hover:border-b hover:border-white cursor-pointer"
+          >
+            Users
+          </li>
+          <li
+            class="text-lg hover:text-white border-b border-slate-950 hover:border-b hover:border-white cursor-pointer"
+          >
+            Expense Center
+          </li>
+          <li
+            class="text-lg hover:text-white border-b border-slate-950 hover:border-b hover:border-white cursor-pointer"
+          >
+            Curency Exchange
+          </li>
+        </ul>
+      </nav>
+      <div class="space-x-6 text-white pr-7 hidden md:flex">
+        <button
+          class="bg-blue-700 rounded-md px-5 py-2 text-white text-base cursor-pointer"
+        >
+          Deposit
+        </button>
+        <div class="flex items-center cursor-pointer">
+          <img
+            src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+            alt=""
+            class="rounded-full w-10 mr-3"
+          />
+          James Smith
+          <span><i class="fa-solid fa-angle-down ml-2"></i></span>
+        </div>
+      </div>
+    </header>
+    <div class="flex w-full">
+      <div
+        class="w-24 text-white text-center hidden md:flex flex-col space-y-8 border-r border-gray-800"
+      >
+        <div class="mt-5 pr-3 pl-3">
+          <img src="tailwind css.png" alt="" class="w-12" />
+        </div>
+        <span class="text-[#ffffff85] hover:text-white">
+          <i class="fa-solid fa-house fa-lg"></i>
+        </span>
+        <span class="text-[#ffffff85] hover:text-white">
+          <i class="fa-solid fa-suitcase fa-lg"></i>
+        </span>
+        <span class="text-[#ffffff85] hover:text-white">
+          <i class="fa-regular fa-envelope fa-lg"></i>
+        </span>
+        <span class="text-[#ffffff85] hover:text-white">
+          <i class="fa-solid fa-table-cells fa-lg"></i>
+        </span>
+      </div>
+      <div class="lg:flex w-96 flex-col p-5 overflow-y-scroll hidden">
+        <p class="text-[#ffffff85] uppercase font-normal text-sm mt-5 mb-3">
+          Users
+        </p>
+        <div class="flex items-center mb-3">
+          <form>
+            <div class="relative text-gray-600">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                <button
+                  type="submit"
+                  class="p-1 focus:outline-none focus:shadow-outline"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </span>
+              <input
+                type="search"
+                class="py-2 text-sm md:w-60 w-52 text-white bg-slate-950 rounded-lg pl-10 border border-slate-700 outline-1 outline-gray-600 focus:text-white"
+                placeholder="Search"
+              />
+            </div>
+          </form>
+        </div>
+        <div
+          class="bg-slate-900 p-3 rounded-lg border-2 mb-3 border-slate-900 hover:border-2 hover:border-blue-700"
+        >
+          <div class="flex items-center text-white mb-3">
+            <img
+              src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+              alt=""
+              class="rounded-full w-8 mr-3"
+            />
+            <p class="text-base font-semibold">Kathyrn Murphy</p>
+          </div>
+          <hr class="border-b border-gray-700 mb-2" />
+          <div class="flex justify-between">
+            <p class="px-3 py-1 rounded-lg text-xs bg-slate-950 text-blue-700">
+              Design
+            </p>
+            <p class="text-gray-500 text-xs">$1.902.00</p>
+          </div>
+        </div>
+        <div
+          class="bg-slate-900 p-3 rounded-lg border-2 mb-3 border-slate-900 hover:border-2 hover:border-blue-700"
+        >
+          <div class="flex items-center text-white mb-3">
+            <img
+              src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+              alt=""
+              class="rounded-full w-8 mr-3"
+            />
+            <p class="text-base font-semibold">Mert Cukuren</p>
+          </div>
+          <hr class="border-b border-gray-700 mb-2" />
+          <div class="flex justify-between">
+            <p class="px-3 py-1 rounded-lg text-xs bg-slate-950 text-green-600">
+              Sales
+            </p>
+            <p class="text-gray-500 text-xs">$2,740.00</p>
+          </div>
+        </div>
+        <div
+          class="bg-slate-900 p-3 rounded-lg border-2 mb-3 border-slate-900 hover:border-2 hover:border-blue-700"
+        >
+          <div class="flex items-center text-white mb-3">
+            <img
+              src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+              alt=""
+              class="rounded-full w-8 mr-3"
+            />
+            <p class="text-base font-semibold">Albert Flores</p>
+          </div>
+          <hr class="border-b border-gray-700 mb-2" />
+          <div class="flex justify-between">
+            <p
+              class="px-3 py-1 rounded-lg text-xs bg-slate-950 text-orange-500"
+            >
+              Marketing
+            </p>
+            <p class="text-gray-500 text-xs">$0.00</p>
+          </div>
+        </div>
+        <div
+          class="bg-slate-900 p-3 rounded-lg border-2 mb-3 border-slate-900 hover:border-2 hover:border-blue-700"
+        >
+          <div class="flex items-center text-white mb-3">
+            <img
+              src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+              alt=""
+              class="rounded-full w-8 mr-3"
+            />
+            <p class="text-base font-semibold">Jane Cooper</p>
+          </div>
+          <hr class="border-b border-gray-700 mb-2" />
+          <div class="flex justify-between">
+            <p class="px-3 py-1 rounded-lg text-xs bg-slate-950 text-blue-700">
+              Design
+            </p>
+            <p class="text-gray-500 text-xs">$762.00</p>
+          </div>
+        </div>
+        <div
+          class="bg-slate-900 p-3 rounded-lg border-2 mb-3 border-slate-900 hover:border-2 hover:border-blue-700"
+        >
+          <div class="flex items-center text-white mb-3">
+            <img
+              src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+              alt=""
+              class="rounded-full w-8 mr-3"
+            />
+            <p class="text-base font-semibold">Ronald Richards</p>
+          </div>
+          <hr class="border-b border-gray-700 mb-2" />
+          <div class="flex justify-between">
+            <p class="px-3 py-1 rounded-lg text-xs bg-slate-950 text-green-600">
+              Sales
+            </p>
+            <p class="text-gray-500 text-xs">$2,740.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:p-10 p-5 pb-0">
+        <div class="stickey">
+          <div class="flex justify-between">
+            <div class="flex items-center text-white">
+              <img
+                src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+                alt=""
+                class="rounded-full w-12 mr-3"
+              />
+              <p class="text-3xl">Mert Cukeren</p>
+            </div>
+            <div class="md:flex hidden items-center justify-center">
+              <div class="mr-5">
+                <p class="text-sm text-slate-600 tigh">Account Balance:</p>
+                <p class="text-white text-xl float-right">$2,794.00</p>
+              </div>
+              <div
+                class="w-8 h-8 cursor-pointer rounded-full border border-gray-800 flex items-start justify-center text-lg font-bold text-white"
+              >
+                <p class="-mt-1">...</p>
+              </div>
+            </div>
+          </div>
+          <nav class="mt-9 mb-8">
+            <ul
+              class="flex h-12 border-b border-gray-800 items-center space-x-6 text-base text-[#ffffff85]"
+            >
+              <li
+                class="hover:text-white cursor-pointer hover:border-b-2 border-b border-slate-950 hover:border-white"
+              >
+                Activites
+              </li>
+              <li
+                class="hover:text-white cursor-pointer hover:border-b-2 border-b border-slate-950 hover:border-white"
+              >
+                Transfer
+              </li>
+              <li
+                class="hover:text-white cursor-pointer hover:border-b-2 border-b border-slate-950 hover:border-white hidden sm:block"
+              >
+                Budgets
+              </li>
+              <li
+                class="hover:text-white cursor-pointer hover:border-b-2 border-b border-slate-950 hover:border-white hidden sm:block"
+              >
+                Notifications
+              </li>
+              <li
+                class="hover:text-white cursor-pointer hover:border-b-2 border-b border-slate-950 hover:border-white hidden sm:block"
+              >
+                Cards
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex justify-between items-center mb-7">
+          <div class="flex">
+            <div
+              class="text-[#ffffff85] mr-4 cursor-pointer flex items-center border border-gray-700 rounded-md px-1 sm:px-3 py-1"
+            >
+              <span>
+                <i class="fa-regular fa-calendar mr-3 text-gray-700 text-xl"></i
+              ></span>
+              <p>Last 30 days</p>
+              <span>
+                <i class="fa-solid fa-angle-down text-sm ml-2"></i>
+              </span>
+            </div>
+            <div
+              class="text-[#ffffff85] cursor-pointer flex items-center border border-gray-700 rounded-md px-1 sm:px-3 py-1"
+            >
+              <p>Filter by</p>
+              <span>
+                <i class="fa-solid fa-angle-down text-sm ml-2"></i>
+              </span>
+            </div>
+          </div>
+          <div class="md:flex hidden items-center">
+            <p class="text-[#ffffff85] mr-2 text-xs">Page 2 of 4</p>
+            <span
+              class="w-8 h-8 cursor-pointer rounded-lg border border-gray-800 flex items-center justify-center text-sm text-center font-bold mr-4"
+            >
+              <i class="fa-solid fa-angle-left text-[#ffffff85]"></i>
+            </span>
+            <span
+              class="w-8 h-8 cursor-pointer rounded-lg border border-gray-800 flex items-center justify-center text-sm text-center font-bold mr-4"
+            >
+              <i class="fa-solid fa-angle-right text-[#ffffff85]"></i>
+            </span>
+          </div>
+        </div>
+        <table class="w-full text-left">
+          <thead>
+            <tr class="text-[#ffffff85]">
+              <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-800">
+                Type
+              </th>
+              <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-800">
+                Where
+              </th>
+              <th
+                class="font-normal px-3 pt-0 pb-3 border-b border-gray-800 hidden md:table-cell"
+              >
+                Description
+              </th>
+              <th class="font-normal px-3 pt-0 pb-3 border-b border-gray-800">
+                Amount
+              </th>
+              <th
+                class="font-normal px-3 pt-0 pb-3 border-b border-gray-800 sm:text-[#ffffff85] text-white"
+              >
+                Date
+              </th>
+            </tr>
+          </thead>
+          <tbody class="text-white">
+            <tr>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span class="mr-5">
+                    <i class="fa-solid fa-exclamation text-yellow-500"></i>
+                  </span>
+                  Card
+                </div>
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span
+                    class="w-8 h-8 cursor-pointer rounded-lg border border-gray-800 flex items-center justify-center text-lg text-center font-bold mr-4"
+                  >
+                    <i class="fa-brands fa-paypal text-blue-700"></i>
+                  </span>
+                  PayPal
+                </div>
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 md:table-cell hidden"
+              >
+                Subscription renewal
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 text-red-500"
+              >
+                - $120.00
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <div class="sm:flex hidden text-sm flex-col">
+                    24.12.2020
+                    <div class="text-gray-400 text-xs">11:16 AM</div>
+                  </div>
+                  <button
+                    class="w-8 h-8 text-xl font-bold inline-flex items-center justify-center text-gray-400 ml-auto"
+                  >
+                    ...
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span class="mr-5">
+                    <i
+                      class="fa-regular fa-credit-card fa-sm text-[#ffffff85]"
+                    ></i> </span
+                  >Card
+                </div>
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span
+                    class="w-8 h-8 cursor-pointer rounded-lg border border-gray-800 flex items-center justify-center text-lg text-center font-bold mr-4"
+                  >
+                    <i class="fa-brands fa-windows text-red-600"></i>
+                  </span>
+                  Microsoft
+                </div>
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 md:table-cell hidden"
+              >
+                Subscription renewal
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 text-red-500"
+              >
+                - $99.00
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <div class="sm:flex hidden text-sm flex-col">
+                    24.12.2020
+                    <div class="text-gray-400 text-xs">07:16 AM</div>
+                  </div>
+                  <button
+                    class="w-8 h-8 text-xl font-bold inline-flex items-center justify-center text-gray-400 ml-auto"
+                  >
+                    ...
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span class="mr-5">
+                    <i
+                      class="fa-regular fa-credit-card fa-sm text-[#ffffff85]"
+                    ></i> </span
+                  >Card
+                </div>
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span
+                    class="w-8 h-8 cursor-pointer rounded-lg border border-gray-800 flex items-center justify-center text-lg text-center font-bold mr-4"
+                  >
+                    <i class="fa-brands fa-apple text-gray-800"></i>
+                  </span>
+                  Apple
+                </div>
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 md:table-cell hidden"
+              >
+                Macbook Pro 13"
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 text-red-500"
+              >
+                - $1.499.99
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <div class="sm:flex hidden text-sm flex-col">
+                    24.12.2020
+                    <div class="text-gray-400 text-xs">11:03 AM</div>
+                  </div>
+                  <button
+                    class="w-8 h-8 text-xl font-bold inline-flex items-center justify-center text-gray-400 ml-auto"
+                  >
+                    ...
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span class="mr-4">
+                    <i class="fa-solid fa-arrow-down text-green-500"></i> </span
+                  >Income
+                </div>
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <img
+                    src="https://w7.pngwing.com/pngs/81/570/png-transparent-profile-logo-computer-icons-user-user-blue-heroes-logo-thumbnail.png"
+                    alt=""
+                    class="rounded-full h-8 w-8 mr-4"
+                  />
+                  James Smith
+                </div>
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 md:table-cell hidden"
+              >
+                Invoice No: 37401
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 text-green-500"
+              >
+                + $60.00
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <div class="sm:flex hidden text-sm flex-col">
+                    13.11.2020
+                    <div class="text-gray-400 text-xs">19:45 AM</div>
+                  </div>
+                  <button
+                    class="w-8 h-8 text-xl font-bold inline-flex items-center justify-center text-gray-400 ml-auto"
+                  >
+                    ...
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span class="mr-5">
+                    <i
+                      class="fa-regular fa-credit-card fa-sm text-[#ffffff85]"
+                    ></i> </span
+                  >Card
+                </div>
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span
+                    class="w-8 h-8 cursor-pointer rounded-lg border border-gray-800 flex items-center justify-center text-lg text-center font-bold mr-4"
+                  >
+                    <img src="adobe.png" alt="" class="w-4" />
+                  </span>
+                  Adobe
+                </div>
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 md:table-cell hidden"
+              >
+                Product purchased
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 text-red-500"
+              >
+                - $49.99
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <div class="sm:flex hidden text-sm flex-col">
+                    10.03.2020
+                    <div class="text-gray-400 text-xs">10:29 AM</div>
+                  </div>
+                  <button
+                    class="w-8 h-8 text-xl font-bold inline-flex items-center justify-center text-gray-400 ml-auto"
+                  >
+                    ...
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span class="mr-5">
+                    <i
+                      class="fa-regular fa-credit-card fa-sm text-[#ffffff85]"
+                    ></i> </span
+                  >Card
+                </div>
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span
+                    class="w-8 h-8 cursor-pointer rounded-lg border border-gray-800 flex items-center justify-center text-lg text-center font-bold mr-4"
+                  >
+                    <i class="fa-brands fa-spotify text-green-500"></i>
+                  </span>
+                  Spotify
+                </div>
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 md:table-cell hidden"
+              >
+                Subscription renewal
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 text-red-500"
+              >
+                - $5.99
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <div class="sm:flex hidden text-sm flex-col">
+                    02.04.2020
+                    <div class="text-gray-400 text-xs">10:29 AM</div>
+                  </div>
+                  <button
+                    class="w-8 h-8 text-xl font-bold inline-flex items-center justify-center text-gray-400 ml-auto"
+                  >
+                    ...
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span class="mr-5">
+                    <i
+                      class="fa-regular fa-credit-card fa-sm text-[#ffffff85]"
+                    ></i> </span
+                  >Card
+                </div>
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <span
+                    class="w-8 h-8 cursor-pointer rounded-lg border border-gray-800 flex items-center justify-center text-lg text-center font-bold mr-4"
+                  >
+                    <i class="fa-brands fa-amazon text-black"></i>
+                  </span>
+                  Amazon
+                </div>
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 md:table-cell hidden"
+              >
+                PlayStation 5
+              </td>
+              <td
+                class="sm:p-3 py-2 px-1 border-b border-gray-800 text-red-500"
+              >
+                - $399.99
+              </td>
+              <td class="sm:p-3 py-2 px-1 border-b border-gray-800">
+                <div class="flex items-center">
+                  <div class="sm:flex hidden text-sm flex-col">
+                    08.09.2020
+                    <div class="text-gray-400 text-xs">11:00 AM</div>
+                  </div>
+                  <button
+                    class="w-8 h-8 text-xl font-bold inline-flex items-center justify-center text-gray-400 ml-auto"
+                  >
+                    ...
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
